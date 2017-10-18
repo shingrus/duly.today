@@ -1,19 +1,19 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnInit {
 
-  model: any = {};
-  loading = false;
+export class RegisterComponent {
 
-  constructor() {
-  }
 
-  ngOnInit() {
+data: any  = {};
+
+  register() {
+    console.log('register:' + this.data.email);
   }
 
 }
