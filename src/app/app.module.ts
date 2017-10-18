@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import {routing} from './routing/routing.module';
 import { HomeComponent } from './home/home.component';
 import {RegisterComponent} from './register/register.component';
+import {UsersService} from './services/users.service';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -15,7 +17,8 @@ import {RegisterComponent} from './register/register.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,7 @@ import {RegisterComponent} from './register/register.component';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

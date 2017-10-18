@@ -1,9 +1,8 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {RouterModule, Routes} from '@angular/router';
+import {RouterModule} from '@angular/router';
 
 import {RegisterComponent} from '../register/register.component';
 import {HomeComponent} from '../home/home.component';
+import {LoginComponent} from '../login/login.component';
 
 
 export const routing = RouterModule.forRoot([
@@ -14,6 +13,10 @@ export const routing = RouterModule.forRoot([
   {
     path: 'register',
     component: RegisterComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: '',
